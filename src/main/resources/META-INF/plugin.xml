@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>org.example.TextCaseChange</id>
+    <vendor>Example Vendor</vendor>
+    <description>
+        <![CDATA[
+        A plugin that allows users to easily change the case of selected text in their editor.
+        ]]>
+    </description>
+    <depends>com.intellij.modules.all</depends>
+    <actions>
+        <action id="20CaseChanger01" class="actions.CaseChange" text="Hello Sir/Ma'am">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

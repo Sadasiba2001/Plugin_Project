@@ -1,0 +1,27 @@
+plugins {
+    id "org.jetbrains.intellij" version "1.17.4"
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+intellij {
+    version = "2024.1.7"
+    type = "IU"
+    plugins = ["com.jetbrains.php:241.19416.23"]
+}
+
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
